@@ -1,0 +1,9 @@
+[submodule "partymakerBackend"]
+	path = partymakerBackend
+	url = https://github.com/LexaLukivka/partymakerBackend.git
+[submodule "partymakerFrontend"]
+	path = partymakerFrontend
+	url = https://github.com/LexaLukivka/partymakerFrontend.git
+[submodule "partymakerMobile"]
+	path = partymakerMobile
+	url = https://github.com/pavliha/partymakerMobile.git
