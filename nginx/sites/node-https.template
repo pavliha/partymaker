@@ -8,6 +8,6 @@ server {
     ssl_certificate_key /etc/ssl/privkey1.pem;
 
     location / {
-        proxy_pass http://node:${WEB_REVERSE_PROXY_PORT};
+        proxy_pass http://frontend:${WEB_REVERSE_PROXY_PORT};
     }
 }

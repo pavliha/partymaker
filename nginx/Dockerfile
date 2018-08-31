@@ -9,7 +9,7 @@ COPY certs /etc/ssl/
 COPY sites /etc/nginx/templates
 
 ARG WEB_REVERSE_PROXY_PORT=8080
-ARG WEB_SSL=false
+ARG WEB_SSL=true
 ARG SELF_SIGNED=false
 ARG NO_DEFAULT=false
 

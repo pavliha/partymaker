@@ -4,7 +4,7 @@ server {
     listen 80 default_server;
 
     location / {
-        proxy_pass http://frontend:8080;
+        proxy_pass http://frontend:${WEB_REVERSE_PROXY_PORT};
     }
 
     location /.well-known/acme-challenge/ {
