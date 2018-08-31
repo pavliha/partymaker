@@ -26,10 +26,10 @@ services:
     build:
       context: ./mysql
       args:
-      - MYSQL_DATABASE=default_database
-      - MYSQL_USER=default_user
-      - MYSQL_PASSWORD=secret
-      - MYSQL_ROOT_PASSWORD=root
+      - MYSQL_DATABASE=partymaker
+      - MYSQL_USER=root
+      - MYSQL_PASSWORD=incode2015
+      - MYSQL_ROOT_PASSWORD=incode2015
     volumes:
     - ./data/mysql/:/var/lib/mysql
     ports:
@@ -41,7 +41,7 @@ services:
     build:
       context: ./nginx
       args:
-      - WEB_SSL=false
+      - WEB_SSL=true
       - SELF_SIGNED=true
       - NO_DEFAULT=true
     volumes:
@@ -53,6 +53,10 @@ services:
     tty: true
 
   certbot:
+    environment:
+    - CN=partymaker.cf
+    - EMAIL=kostyk.pavel.09@gmail.com
+
     build:
       context: ./certbot
     links:
