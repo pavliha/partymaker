@@ -16,5 +16,3 @@ else
         rm /etc/nginx/sites-available/node-https.template.conf
     fi
 fi
-
-. /root/scripts/run-openssl.sh

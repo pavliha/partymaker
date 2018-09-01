@@ -53,7 +53,7 @@ services:
 
   certbot:
     environment:
-    - CN=partymaker.cf
+    - CN=partymaker.zp.ua
     - EMAIL=kostyk.pavel.09@gmail.com
 
     build:
