@@ -51,15 +51,15 @@ services:
     expose:
     - "3306"
 
-  certbot:
-    environment:
-    - CN=partymaker.zp.ua
-    - EMAIL=kostyk.pavel.09@gmail.com
-
-    build:
-      context: ./certbot
-    links:
-    - nginx
-    volumes:
-    - ./certbot/letsencrypt/:/var/www/letsencrypt
-    - ./certbot/certs/:/var/certs
+#  certbot:
+#    environment:
+#    - CN=partymaker.zp.ua
+#    - EMAIL=kostyk.pavel.09@gmail.com
+#
+#    build:
+#      context: ./certbot
+#    links:
+#    - nginx
+#    volumes:
+#    - ./certbot/letsencrypt/:/var/www/letsencrypt
+#    - ./certbot/certs/:/var/certs
