@@ -4,10 +4,10 @@ ADD my.cnf /etc/mysql/conf.d/my.cnf
 
 RUN chown -R mysql:root /var/lib/mysql/
 
-ARG MYSQL_DATABASE=default_database
-ARG MYSQL_USER=default_user
-ARG MYSQL_PASSWORD=secret
-ARG MYSQL_ROOT_PASSWORD=root
+ARG MYSQL_DATABASE=partymaekr
+ARG MYSQL_USER=root
+ARG MYSQL_PASSWORD=incode2015
+ARG MYSQL_ROOT_PASSWORD=incode2015
 
 ENV MYSQL_DATABASE=$MYSQL_DATABASE
 ENV MYSQL_USER=$MYSQL_USER
