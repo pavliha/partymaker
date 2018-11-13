@@ -4,3 +4,6 @@
 [submodule "frontend"]
 	path = frontend
 	url = https://github.com/LexaLukivka/partymakerFrontend.git
+[submodule "admin"]
+	path = admin
+	url = https://github.com/pavliha/partymakerAdmin.git

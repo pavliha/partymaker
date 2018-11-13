@@ -21,6 +21,16 @@ services:
     expose:
     - "8080"
 
+  admin:
+    build:
+      context: ./admin
+    volumes:
+    - ./admin/:/opt/app
+    ports:
+    - "8080:8080"
+    expose:
+    - "8080"
+
   nginx:
     build:
       context: ./nginx
