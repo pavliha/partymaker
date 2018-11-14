@@ -52,11 +52,6 @@ services:
   mysql:
     build:
       context: ./mysql
-      args:
-      - MYSQL_DATABASE=partymaker
-      - MYSQL_USER=root
-      - MYSQL_PASSWORD=incode2015
-      - MYSQL_ROOT_PASSWORD=incode2015
     volumes:
     - ./data/mysql/:/var/lib/mysql
     ports:
